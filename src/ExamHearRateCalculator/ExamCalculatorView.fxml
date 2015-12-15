@@ -1,0 +1,47 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="292.0" prefWidth="366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExamHearRateCalculator.ExamCalculatorViewController">
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints maxWidth="234.0" minWidth="187.0" prefWidth="234.0" />
+      <ColumnConstraints maxWidth="112.0" minWidth="65.0" prefWidth="71.0" />
+      <ColumnConstraints maxWidth="112.0" minWidth="59.0" prefWidth="59.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <children>
+      <TextField fx:id="ageInputBox" prefHeight="25.0" prefWidth="14.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Label fx:id="targetHeartRate" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="208.0" text="Target Heart Rate" textFill="#d32525" GridPane.columnIndex="2">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="186.0" text="Age" textAlignment="RIGHT" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label fx:id="maximumHeartRateLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="188.0" text="Maximum Heart Rate" textAlignment="RIGHT" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Label fx:id="lowerRangeLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="186.0" text="Lower Range" textAlignment="RIGHT" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <Label fx:id="upperRangeLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="185.0" text="Upper Range" textAlignment="RIGHT" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+      <RadioButton mnemonicParsing="false" text="Male" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="76.0" text="Female" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label fx:id="heartRateDisplayLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+      <Label fx:id="lowerRangeDisplayLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Label fx:id="upperRangeDisplayLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="172.0" text="Calculate" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+   </children>
+</GridPane>
